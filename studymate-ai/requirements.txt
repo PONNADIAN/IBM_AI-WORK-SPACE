@@ -1,0 +1,45 @@
+# ─────────────────────────────────────────────
+# StudyMate AI — Backend Dependencies
+# Install: pip install -r requirements.txt
+# ─────────────────────────────────────────────
+
+# ── Web Framework ─────────────────────────────
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.17
+
+# ── Settings & Validation ────────────────────
+pydantic==2.10.3
+
+# ── Environment Variables ────────────────────
+python-dotenv==1.0.1
+
+# ── AI / LLM ─────────────────────────────────
+# OpenAI Python SDK (official)
+openai==1.58.1
+
+# LangChain + LangGraph (orchestration layer)
+langchain-core==0.3.29
+langchain-openai==0.3.0
+langgraph==0.2.60
+
+# ── Utilities (optional, used by app/) ───────
+# These are included for compatibility with the
+# full AI Workspace version (app/ directory).
+# The backend/ package does NOT require them.
+pydantic-settings==2.6.1
+pydantic[email]
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.10
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+anthropic==0.39.0
+google-generativeai==0.8.3
+PyMuPDF==1.24.14
+python-docx==1.1.2
+pandas==2.2.3
+openpyxl==3.1.5
+Pillow==11.0.0
+httpx==0.28.0
+aiofiles==24.1.0

@@ -1,0 +1,66 @@
+# ─────────────────────────────────────────────
+# StudyMate AI — .dockerignore
+# Prevents these files from being sent to the Docker build context.
+# This keeps images small and secrets safe.
+# ─────────────────────────────────────────────
+
+# ── NEVER include real secrets in images ──────
+.env
+*.env
+.env.*
+!.env.example
+
+# ── Python bytecode (regenerated inside container) ──
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ── Virtual environments ───────────────────────
+venv/
+.venv/
+env/
+
+# ── Git history (not needed in container) ─────
+.git/
+.gitignore
+
+# ── IDE config ────────────────────────────────
+.vscode/
+.idea/
+*.swp
+
+# ── Test artefacts ────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── OS junk ───────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Logs ──────────────────────────────────────
+*.log
+logs/
+
+# ── Node / Frontend (CRITICAL for build speed) ──
+node_modules/
+frontend_new/node_modules/
+frontend_new/dist/
+frontend_new/.vite/
+npm-debug.log*
+
+# ── Large files / archives ────────────────────
+*.zip
+*.tar.gz
+*.gz
+
+# ── DB files (use volumes instead) ────────────
+*.db
+*.sqlite
+
+# ── Uploads (use volumes instead) ─────────────
+uploads/
+
+# ── Agents config ─────────────────────────────
+.agents/

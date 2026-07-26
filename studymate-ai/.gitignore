@@ -1,0 +1,61 @@
+# ─────────────────────────────────────────────
+# AI Workspace — .gitignore
+# ─────────────────────────────────────────────
+
+# ── SECRETS — NEVER COMMIT ────────────────────
+.env
+*.env
+.env.*
+!.env.example
+
+# ── Python ────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+.ENV/
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ── Testing ───────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ── IDEs ─────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Docker ───────────────────────────────────
+# (Docker images are not committed to git)
+
+# ── Node (if any tooling added later) ────────
+node_modules/
+npm-debug.log*
+
+# ── Database & Uploads (local dev) ───────────
+ai_workspace.db
+uploads/
+
+# ── Frontend ──────────────────────────────────
+frontend_new/node_modules/
+frontend_new/dist/
+
+# ── Logs ─────────────────────────────────────
+*.log
+logs/
