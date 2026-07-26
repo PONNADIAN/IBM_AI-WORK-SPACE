@@ -23,4 +23,4 @@ IBM_AI-WORK-SPACE/
 
 ---
 
-*Built with ❤️ for the IBM Internship — Vibe Coding Masterclass, 2026*
+*Built with ❤️ for the IBM Internship — Vibe Coding Masterclass, 2026*.
